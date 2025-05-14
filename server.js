@@ -26,8 +26,8 @@ app.use('/states', require('./routes/states'));
 
 // Root Route
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
+    res.sendFile(path.join(__dirname, 'views', 'index.html'));
+  });
 
 // 404 handler (for non-API routes)
 app.all('*', (req, res) => {
